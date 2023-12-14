@@ -1,0 +1,73 @@
+body {
+  background-color: rgb(41, 41, 41);
+}
+canvas {
+  border: 1px solid #000000;
+}
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Roboto", sans-serif;
+}
+.wrapper {
+  display: flex;
+}
+.canvas {
+  display: block;
+  margin: 0 auto;
+}
+.canvas-wrapper {
+  width: 70%;
+}
+input {
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.form-stngs {
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: 2px double black;
+}
+button {
+  border-radius: 4px;
+  border: none;
+  padding: 10px 15px;
+  background-color: rgb(31, 187, 25);
+  color: white;
+  transition: all 250ms ease-in-out;
+}
+
+button:hover {
+  background-color: rgb(13, 121, 24);
+}
+
+.reset-button {
+  display: block;
+  margin: 20px auto;
+  background-color: red;
+}
+.reset-button:hover {
+  background-color: rgb(60, 1, 1);
+}
+
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.three-transform-input {
+  width: 10%;
+}
+
+.three-transform-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

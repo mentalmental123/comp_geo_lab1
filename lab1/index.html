@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coordinate System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="canvas-wrapper">
+        <canvas
+          class="canvas"
+          id="coordinateCanvas"
+          width="1000"
+          height="1000"
+        ></canvas>
+      </div>
+      <div class="manage-from">
+      
+            <button type="submit" class="reset-button">RESET</button>
+         
+        </form>
+        <form class="rotation">
+          <div class="form-stngs">
+            <label for="rotate">Rotation angle</label>
+            <input type="number" id="rotate" />
+            <button type="submit" class="rotation-button">Apply</button>
+          </div>
+        </form>
+        <form class="motion">
+          <div class="form-stngs">
+            <label for="motionX">X move value</label>
+            <input type="number" id="motionX" />
+            <label for="motionY">Y move value</label>
+            <input type="number" id="motionY" />
+            <button type="submit" class="motion-button">Apply</button>
+          </div>
+        </form>
+        <form class="scale">
+          <div class="form-stngs">
+            <label for="scaleX">X scale value</label>
+            <input type="number" id="scaleX" step="any" min="0"/>
+            <label for="scaleY">Y scale value</label>
+            <input type="number" id="scaleY" step="any" min="0"/>
+            <button type="submit" class="scale-button">Apply</button>
+          </div>
+        </form>
+        <form class="symm">
+          <div class="form-stngs">
+            <label for="symmX">X symmetry</label>
+            <input type="checkbox" id="symmX"/>
+            <label for="symmY">Y symmetry</label>
+            <input type="checkbox" id="symmY" />
+            <button type="submit" class="symm-button">Apply</button>
+          </div>
+        </form>
+        <form class="affine">
+          <div class="form-stngs">
+            <ul class="three-transform">
+              <li class="three-transform-item"> <label for="Xx">Xx:</label>
+      <input class="three-transform-input" type="number" id="Xx" value="1" />
+      <label for="Xy">Xy:</label>
+      <input class="three-transform-input" type="number" id="Xy" value="0" /></li>
+              <li class="three-transform-item">  <label for="Yx">Yx:</label>
+      <input class="three-transform-input" type="number" id="Yx" value="0" />
+      <label for="Yy">Yy:</label>
+      <input class="three-transform-input" type="number" id="Yy" value="1" /></li>
+              <li class="three-transform-item"><label for="Ox">0x:</label>
+      <input class="three-transform-input" type="number" id="Ox" value="0" />
+      <label for="Oy">0y:</label>
+      <input class="three-transform-input" type="number" id="Oy" value="0" /></li>
+            </ul>
+     
+      
+    
+      
+      
+      
+      <button type="submit">Apply</button>
+    </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="./src/index.js"></script>
+  </body>
+</html>
